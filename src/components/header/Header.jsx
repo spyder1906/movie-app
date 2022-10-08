@@ -60,7 +60,7 @@ const Header = ({userName, onLogout}) => {
                         ))
                     }
                     <li>{userName}</li>
-                    <li onClick={onLogout}><img src="https://img.icons8.com/carbon-copy/100/000000/exit.png"/></li>
+                    <li onClick={onLogout}><img className='image-logout' src="https://img.icons8.com/carbon-copy/100/000000/exit.png"/><p>Logout</p></li>
                 </ul>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { useLogify } from "react-logify";
+import {useLogify} from 'react-logify';
 import "swiper/swiper.min.css";
 import "./assets/boxicons-2.0.7/css/boxicons.min.css";
 import "./App.scss";
@@ -21,7 +21,7 @@ function App() {
         render={(props) => (
           <>
             {!user.id && <Login onLogin={onLogin}/>}
-            {user.id && (
+            {user?.id && (
               <>
                 <Header {...props} userName={user?.name} onLogout={onLogout}/>
                 <Routes />
